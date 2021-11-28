@@ -1,10 +1,11 @@
 {
-  "name": "todolistcypresstests",
+  "name": "todo-list-cypress-tests",
   "version": "1.0.0",
   "description": "Demo tests in Cypress for Todo List app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress": "./node_modules/.bin/cypress",
+    "test": "cypress run"
   },
   "repository": {
     "type": "git",
