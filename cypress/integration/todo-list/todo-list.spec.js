@@ -106,8 +106,6 @@ describe("example to-do app", () => {
     it("should filter for active tasks", () => {
       cy.contains("Active").click().should("have.class", "selected");
 
-      // After filtering, we can assert that there is only the one
-      // incomplete item in the list.
       cy.get(listItemsSelector).as("listitems").should("have.length", 2);
       cy.get("@listitems")
         .eq(0)
